@@ -23,6 +23,7 @@ module.exports = {
     libraryTarget: 'umd'
   },
   externals: {
-    react: 'react'
+    react: 'react',
+    'prop-types': 'prop-types'
   }
 };
