@@ -25,7 +25,7 @@ class AntiWechatAudio extends React.PureComponent {
   }
 
   componentDidMount() {
-    if (this.props.autoplay) {
+    if (this.props.autoplay || !this.props.paused) {
       if (window.WeixinJSBridge) {
         this._playAudio(true);
       } else {
